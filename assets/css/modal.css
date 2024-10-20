@@ -27,14 +27,14 @@
     font-weight: bold;
 }
 
-.icone-fechar-aviso-privacidade, .icone-fechar-termos-uso {
+.icone-fechar-modal, .icone-fechar-modal {
     color: var(--cor-icone-fechar-modal);
     cursor: pointer;
     font-size: 20px;
     transition: .3s;
 }
 
-.icone-fechar-aviso-privacidade:hover, .icone-fechar-termos-uso:hover {
+.icone-fechar-modal:hover, .icone-fechar-modal:hover {
     color: var(--cor-icone-fechar-modal-hover);
 }
 

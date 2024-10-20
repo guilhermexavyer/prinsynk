@@ -29,12 +29,14 @@
             </form>
 
             <div class="formulario-ajuda">
-                <a href="#">Aviso de cookies</a>
-                <a href="#" id="">Esqueci minha senha</a>
+                <a href="#" id="abrir-modal-aviso-cookies">Aviso de cookies</a>
+                <a href="#" id="abrir-modal-esqueci-senha">Esqueci minha senha</a>
             </div>
         </div>
     </main>
 
+
+    
     <!-- Rodapé -->
     <footer class="rodape">
         <div class="rodape-esquerda">
@@ -51,12 +53,38 @@
         </div>
     </footer>
 
-    <!-- Modal -->
+
+
+    <!-- Modais -->
+    <div id="modal-aviso-cookies" class="modal">
+        <div class="conteudo-modal">
+            <div class="titulo-modal">
+                <p>Aviso de Cookies</p>
+                <i class="fa-regular fa-circle-xmark icone-fechar-modal"></i>
+            </div>
+            <div class="texto-modal">
+                <p>Estes são os avisos de cookies</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-esqueci-senha" class="modal">
+        <div class="conteudo-modal">
+            <div class="titulo-modal">
+                <p>Esqueci minha senha</p>
+                <i class="fa-regular fa-circle-xmark icone-fechar-modal"></i>
+            </div>
+            <div class="texto-modal">
+                <p>Texto para esqueci minha senha</p>
+            </div>
+        </div>
+    </div>
+
     <div id="modal-aviso-privacidade" class="modal">
         <div class="conteudo-modal">
             <div class="titulo-modal">
                 <p>Aviso de Privacidade</p>
-                <i class="fa-regular fa-circle-xmark icone-fechar-aviso-privacidade"></i>
+                <i class="fa-regular fa-circle-xmark icone-fechar-modal"></i>
             </div>
             <div class="texto-modal">
                 <p>Estes são os avisos de privacidade</p>
@@ -68,7 +96,7 @@
         <div class="conteudo-modal">
             <div class="titulo-modal">
                 <p>Termos de Uso</p>
-                <i class="fa-regular fa-circle-xmark icone-fechar-termos-uso"></i>
+                <i class="fa-regular fa-circle-xmark icone-fechar-modal"></i>
             </div>
             <div class="texto-modal">
                 <p>Estes são os termos de uso</p>
@@ -76,6 +104,10 @@
         </div>
     </div>
 
+
+
+    <!-- Scripts -->
+    <script src="../assets/js/modal_login.js"></script>
     <script src="../assets/js/modal_rodape.js"></script>
     <script src="../assets/js/data_hora.js"></script>
 </body>

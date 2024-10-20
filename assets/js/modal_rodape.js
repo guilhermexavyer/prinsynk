@@ -1,7 +1,6 @@
 // Modal Aviso de Privacidade
 const modal_aviso_privacidade = document.getElementById('modal-aviso-privacidade');
 const abrir_modal_aviso_privacidade = document.getElementById('abrir-modal-aviso-privacidade');
-const fechar_modal_aviso_privacidade = document.querySelector('.icone-fechar-aviso-privacidade');
 const conteudo_modal_aviso_privacidade = modal_aviso_privacidade.querySelector('.conteudo-modal');
 
 const funcao_abrir_aviso_privacidade = () => {
@@ -13,15 +12,11 @@ abrir_modal_aviso_privacidade.addEventListener('click', function(event) {
     funcao_abrir_aviso_privacidade();
 });
 
-fechar_modal_aviso_privacidade.addEventListener('click', function() {
-    modal_aviso_privacidade.style.display = 'none';
-});
 
 
 // Modal Termos de Uso
 const modal_termos_uso = document.getElementById('modal-termos-uso');
 const abrir_modal_termos_uso = document.getElementById('abrir-modal-termos-uso');
-const fechar_modal_termos_uso = document.querySelector('.icone-fechar-termos-uso');
 const conteudo_modal_termos_uso = modal_termos_uso.querySelector('.conteudo-modal');
 
 const funcao_abrir_termos_uso = () => {
@@ -33,8 +28,16 @@ abrir_modal_termos_uso.addEventListener('click', function(event) {
     funcao_abrir_termos_uso();
 });
 
-fechar_modal_termos_uso.addEventListener('click', function() {
-    modal_termos_uso.style.display = 'none';
+
+
+// Seleciona todos os ícones de fechar modal
+const icones_fechar_modal = document.querySelectorAll('.icone-fechar-modal');
+
+icones_fechar_modal.forEach(icone => {
+    icone.addEventListener('click', function() {
+        const modal = icone.closest('.modal');
+        modal.style.display = 'none';
+    });
 });
 
 
