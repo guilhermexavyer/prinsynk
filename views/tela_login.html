@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../assets/img/PrintSynk - Ícone.ico">
+    
+    <link rel="stylesheet" href="../assets/css/root.css">
+    <link rel="stylesheet" href="../assets/css/rodape.css">
+    <link rel="stylesheet" href="../assets/css/modal.css">
+    <link rel="stylesheet" href="../assets/css/tela_login.css">
+</head>
+<body>
+    <!-- Formulário de login -->
+    <main class="content">
+        <div class="formulario-container">
+            <div class="formulario-imagem">
+                <img src="../assets/img/PrintSynk - Logo + Nome.png" alt="Printynk" width="120">
+            </div>
+
+            <form class="formulario" action="" method="">
+                <input type="text" id="usuario" name="usuario" placeholder="Usuário" required autocomplete="new-password">
+                <input type="password" id="senha" name="senha" placeholder="Senha" required autocomplete="new-password">
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <div class="formulario-ajuda">
+                <a href="#">Aviso de cookies</a>
+                <a href="#" id="">Esqueci minha senha</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="rodape-esquerda">
+            <a style="margin-right: 5px;" id="abrir-modal-aviso-privacidade">Aviso de Privacidade</a>
+            <p style="margin-right: 5px;">e</p>
+            <a href="" id="abrir-modal-termos-uso">Termos de Uso</a>
+        </div>
+        <div class="rodape-centro">
+            <p style="margin-right: 5px;">PrintSynk</p>
+            <p class="badge-versao" title="Você está utilizando o PrintSynk na base de testes">Teste</p>
+        </div>
+        <div class="rodape-direita">
+            <p id="data-hora-atual"></p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal-aviso-privacidade" class="modal">
+        <div class="conteudo-modal">
+            <div class="titulo-modal">
+                <p>Aviso de Privacidade</p>
+                <i class="fa-regular fa-circle-xmark icone-fechar-aviso-privacidade"></i>
+            </div>
+            <div class="texto-modal">
+                <p>Estes são os avisos de privacidade</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-termos-uso" class="modal">
+        <div class="conteudo-modal">
+            <div class="titulo-modal">
+                <p>Termos de Uso</p>
+                <i class="fa-regular fa-circle-xmark icone-fechar-termos-uso"></i>
+            </div>
+            <div class="texto-modal">
+                <p>Estes são os termos de uso</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/modal_rodape.js"></script>
+    <script src="../assets/js/data_hora.js"></script>
+</body>
+</html>

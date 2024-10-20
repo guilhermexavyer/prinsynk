@@ -1,0 +1,59 @@
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    bottom: 0;
+    left: 0;
+
+    background-color: var(--background-rodape);
+    color: white;
+    font-size: 10px;
+    height: var(--espessura-rodape);
+    padding: 0px 20px 0px 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.rodape-esquerda {
+    display: flex;
+
+    color: var(--cor-texto-rodape);
+}
+
+.rodape-esquerda a {
+    color: var(--cor-texto-rodape);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.rodape-esquerda a:focus, .rodape-esquerda a:hover {
+    text-decoration: underline;
+}
+
+.rodape-centro {
+    display: flex;
+
+    left: 50%;
+    transform: translate(-50%);
+
+    color: var(--cor-texto-rodape);
+    position: absolute;
+    text-align: center;
+}
+
+.badge-versao {
+    background-color: var(--badge-versao-homol);
+    border-radius: 2px;
+    color: var(--background-rodape);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0px 2px 0px 2px;
+    text-transform: uppercase;
+}
+
+.rodape-direita p {
+    border-radius: 3px;
+    color: var(--cor-texto-rodape);
+    padding: 0px 3px 0px 3px;
+}

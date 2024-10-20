@@ -1,0 +1,44 @@
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background-modal);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+.conteudo-modal {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: var(--sombra-modal);
+    padding: 20px;
+    width: 45%;
+}
+
+.titulo-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-modal p {
+    font-weight: bold;
+}
+
+.icone-fechar-aviso-privacidade, .icone-fechar-termos-uso {
+    color: var(--cor-icone-fechar-modal);
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.icone-fechar-aviso-privacidade:hover, .icone-fechar-termos-uso:hover {
+    color: var(--cor-icone-fechar-modal-hover);
+}
+
+.texto-modal {
+    margin-top: 20px;
+    font-size: 13px;
+}
