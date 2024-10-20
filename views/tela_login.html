@@ -22,15 +22,20 @@
             </div>
 
             <form class="formulario" action="" method="">
-                <input type="text" id="usuario" name="usuario" placeholder="Usuário" required autocomplete="new-password">
-                <input type="password" id="senha" name="senha" placeholder="Senha" required autocomplete="new-password">
+                <div class="input-container">
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuário" required autocomplete="new-password">
+                </div>
+                <div class="input-container">
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required autocomplete="new-password">
+                    <i class="fa-regular fa-eye ocultar-senha"></i>
+                </div>
 
                 <button type="submit">Entrar</button>
             </form>
 
             <div class="formulario-ajuda">
-                <a href="#" id="abrir-modal-aviso-cookies">Aviso de cookies</a>
-                <a href="#" id="abrir-modal-esqueci-senha">Esqueci minha senha</a>
+                <a href="" id="abrir-modal-aviso-cookies">Aviso de cookies</a>
+                <a href="" id="abrir-modal-esqueci-senha">Esqueci minha senha</a>
             </div>
         </div>
     </main>
@@ -40,7 +45,7 @@
     <!-- Rodapé -->
     <footer class="rodape">
         <div class="rodape-esquerda">
-            <a style="margin-right: 5px;" id="abrir-modal-aviso-privacidade">Aviso de Privacidade</a>
+            <a style="margin-right: 5px;"  id="abrir-modal-aviso-privacidade" href="">Aviso de Privacidade</a>
             <p style="margin-right: 5px;">e</p>
             <a href="" id="abrir-modal-termos-uso">Termos de Uso</a>
         </div>
@@ -107,6 +112,7 @@
 
 
     <!-- Scripts -->
+    <script src="../assets/js/ocultar_senha.js"></script>
     <script src="../assets/js/modal_login.js"></script>
     <script src="../assets/js/modal_rodape.js"></script>
     <script src="../assets/js/data_hora.js"></script>

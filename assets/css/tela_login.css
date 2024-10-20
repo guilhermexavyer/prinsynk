@@ -35,7 +35,11 @@ body {
     pointer-events: none;
 }
 
-.formulario-container input {
+.input-container {
+    position: relative;
+}
+
+.input-container input {
     border: 1px solid var(--cor-borda-input);
     box-shadow: var(--sombra-input);
     margin-bottom: 15px;
@@ -44,8 +48,21 @@ body {
     width: 100%;
 }
 
-.formulario-container input:focus {
+.input-container input:focus {
     border: 1px solid var(--cor-principal);
+}
+
+.input-container i {
+    color: var(--cor-icone-fechar-modal);
+    font-size: 13px;
+}
+
+.input-container .ocultar-senha {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    transform: translateY(-30%);
 }
 
 .formulario-container button {
